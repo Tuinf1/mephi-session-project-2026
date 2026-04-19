@@ -1,0 +1,213 @@
+    1  ip a
+    2  sudo dnf makecache
+    3  dnf update -y
+    4  reboot
+    5  lsblk
+    6  mkdir /mnt/cdrom
+    7  mount /dev/sr0 /mnt/cdrom
+    8  cd /mnt/cdrom
+    9   ls -la
+   10  ./VBoxLinuxAdditions.run
+   11  sudo reboot
+   12  sudo dnf install kernel-devel kernel-headers gcc make perl bzip2 elfutils-libelf-devel
+   13  ./VBoxLinuxAdditions.run
+   14  cd /mnt/cdrom
+   15   ls -la
+   16  mount /dev/sr0 /mnt/cdrom
+   17   ls -la
+   18  lsblk
+   19  mount /dev/sr0 /mnt/cdrom
+   20   ls -la
+   21  file /dev/sr0
+   22   ls -la
+   23  umount /mnt/cdrom
+   24  mount /dev/sr0 /mnt/cdrom
+   25   ls -la
+   26  reboot
+   27  cd /mnt/cdrom
+   28   ls -la
+   29  mount /dev/sr0 /mnt/cdrom
+   30   ls -la
+   31  reboot
+   32  systemctl status vboxadd-service
+   33  ккуищще
+   34  куищще
+   35  reboot
+   36  ip addr show
+   37  reboot
+   38  ip addr show
+   39  hostnamectl set-hostname mephi-2026.domain.local
+   40  nmcli connection show --active
+   41  nmcli con down "Повторное подключение 1"
+   42  nmcli con down "Проводное подключение 1"
+   43  nmcli con mod enp0s3 \ipv4.method manual \ipv4.addresses 192.168.1.100/24 \ipv4.gateway 192.168.1.1 \ipv4.dns "8.8.8.8"
+   44  nmcli con up enp0s3
+   45  ip route show default
+   46  ping -c 3 192.168.1.1
+   47  ping -c 3 8.8.8.8
+   48  ping -c google.com
+   49  ping -c 3 google.com
+   50  ip a show enp0s3 | grep 'inet "
+   51  ip a | grep -A 5 "enp0s3"
+   52  cat /etc/resolv.conf
+   53  ping -c 3 8.8.8.8
+   54  hostnamectl set-hostname mephi-2026.domain.local
+   55  hostnamectl status | grep "Static hostname"
+   56  exec bash
+   57  exit
+   58  echo $PS1
+   59  nano /root/.bashrc
+   60  sc
+   61  source /root/.bashrc
+   62  c
+   63  ping -c 3 google.com
+   64  ping -c 3 192.168.1.1
+   65  > /tmp/network_check.txt
+   66  ping -c 4 8.8.8.8
+   67  ping -c 4 8.8.8.8 >> /tmp/network_check.txt
+   68  ping -c 192.168.1.1
+   69  ping -c 4 192.168.1.1
+   70  ping -c 4 192.168.1.1 >> /tmp/network_check.txt
+   71  ssh-keygen -t ed25519 -C "rassohinvladislav@gmail.com"
+   72  cat ~/.shh/id_ed25519.pub
+   73  ls -la /root/.ssh/
+   74  cat /root/.ssh/id_ed25519.pub
+   75  ssh -T git@github.com
+   76  ssh-add -l
+   77  eval "$(ssh-agent -s)"
+   78  ssh-add /root/.shh.id_ed25519
+   79  ls -la /root/.ssh/
+   80  cat /root/.ssh/id_ed25519.pub
+   81  ssh-add /root/.ssh.id_ed25519
+   82  ssh-add /root/.ssh/id_ed25519
+   83  ssh -T git@github.com
+   84  eval "$(ssh-agent -s)"
+   85  ssh -T git@github.com
+   86  dnf install mailx
+   87  mail -s "SSH" rassokhinvladislav@mail.ru < /root/.ssh/id_ed25519.pub
+   88  cat /root/.ssh/id_ed25519.pub
+   89  cd /root/.ssh
+   90  python3 -m http.server 8000
+   91  ip addr show | grep inet
+   92  python3 -m http.server 8000
+   93  firewall-cmd --add-prot=8000/tcp --permanent
+   94  firewall-cmd --add-port=8000/tcp --permanent
+   95  firewall-cmd --reload
+   96  python3 -m http.server 8000
+   97  cd
+   98  ssh -T git@github.com
+   99  exit
+  100  cd ~/mephi
+  101  cd /home/tuinf/mephi
+  102  cd
+  103  mkdir mephi
+  104  cd mephi
+  105  cp /tmp/network_check.txt /tmp/mephi
+  106  git init
+  107  ls
+  108  -ls
+  109  ls -la 
+  110  -ls
+  111  cat 
+  112  cat /mephi
+  113  /tmp/mephi
+  114  ls -la /mephi
+  115  pwd
+  116  ls -la /root/mephi
+  117  ls -la
+  118  cp /tmp/network_check.txt
+  119  cp /tmp/network_check.txt .
+  120  ls -la
+  121  git status
+  122  git add .
+  123  git commit -m "1_add network"
+  124  git remote -v
+  125  git branch
+  126  git branch -M main
+  127  git push -u origin main
+  128  git remote -v
+  129  git remote add origin git@github.com:tuinf/mephi-session-project-2026.git
+  130  git remote -v
+  131  git push -u origin main
+  132  git remote add origin git@github.com:Tuinf1/mephi-session-project-2026.git
+  133  git remote set-url origin git@github.com:Tuinf1/mephi-session-project-2026.git
+  134  git push -u origin main
+  135  cd
+  136  Nginx: dnf install -y nginx
+  137  dnf install -y nginx
+  138  dnf install -y tcpdump
+  139  dnf install -y libcap-ng-utils
+  140  nginx -v
+  141  tcpdump --version
+  142  dnf download --destdir=/tmp tcpdump
+  143  ls/tmp/tcpdump*.rpm
+  144  dnf install dnf-plugins-core -y
+  145  dnf download --destdir=/tmp tcpdump
+  146  ls/tmp/tcpdump*.rpm
+  147  find /tmp -maxdepth 1 -name "tcpdump*.rpm"
+  148  dnf remove -y tcpdump
+  149  rpm -ivh /tmp/tcpdump*.rpm
+  150  which tcpdump
+  151  poweroff
+  152  ls
+  153  nginx -v
+  154  -ls
+  155  ls
+  156  cd mephi
+  157  ls
+  158  car nginx_recent_logs.txt
+  159  cat nginx_recent_logs.txt
+  160  cd
+  161  ip mephi-admin
+  162  id mephi-admin
+  163  ls -ld /data/mephi-web
+  164  mount | grep /data/mephi-web
+  165  lsblk
+  166  chown mephi-admin:mephi-devs/data/mephi-web
+  167  chown --help
+  168  chown mephi-admin:mephi-devs /data/mephi-web
+  169  chmod 2775 /data/mephi-web
+  170  ls -id /data/mephi-web
+  171  stat /data/mephi-web
+  172  getenforce
+  173  nano /etc/selinux/config
+  174  dnf install -y policycoreutils-python-utils
+  175  semanage f context -a -t httpd_sys_content_t "/data/mephi-web(/.*)?"
+  176  semanage fcontext -a -t httpd_sys_content_t "/data/mephi-web(/.*)?"
+  177  restorecon -Rv /data/mephi-web
+  178  semanage fcontext -l | grep mephi-web
+  179  ls -laZ /data/mephi-web
+  180  chmod u-s /usr/sbin/tcpdump
+  181  setcap 'cap_net_raw,cap_ten_admin+ep' /usr/sbin/tcpdump
+  182  setcap 'cap_net_raw,cap_net_admin+ep' /usr/sbin/tcpdump
+  183  getcap /usr/sbin/tcpdump
+  184  su - mephi-admin
+  185  echo "root" > /ect/denied_users
+  186  mount | grep " / "
+  187  ls -ld /etc
+  188  echo "root" | tee /ect/denied_users
+  189  df /etc
+  190  stat /etc
+  191  echo "test" > /tmp/test.txt
+  192   ausearch -m avc -ts recent |tail -10
+  193  echo "root" | tee /ect/denied_users
+  194  echo "root" > /ect/denied_users
+  195   ausearch -m avc -ts recent |tail -10
+  196  exit
+  197  su - mephi-admin
+  198  ls -l /data/mephi-web/index.html
+  199  curl http://localhost
+  200  grep -r "root" /etc/nginx/nginx.html
+  201  grep -r "root" /etc/nginx/conf.d/
+  202  ls -la /etc/nginx
+  203  cat /etc/nginx/nginx.conf
+  204  ls -la /etc/nginx/conf.d/
+  205  ls -la /etc/nginx/default.d/
+  206  nano /etc/nginx/nginx.conf
+  207  nginx -t
+  208  systemctl restart nginx
+  209  curl http://localhost
+  210  ls
+  211  cd mephi
+  212  ls
+  213  history > ~/mephi/project_history.txt

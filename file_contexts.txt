@@ -1,0 +1,1 @@
+drwxrwsr-x. 3 mephi-admin mephi-devs system_u:object_r:httpd_sys_content_t:s0 4096 апр 19 21:37 /data/mephi-web
