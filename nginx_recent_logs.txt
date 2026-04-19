@@ -1,1 +1,10 @@
 -- No entries --
+<<<<<<< HEAD
+=======
+root        6872  0.0  0.0  17604  2892 ?        Ss   23:16   0:00 nginx: master process /usr/sbin/nginx
+nginx       6873  0.0  0.0  17980  4496 ?        S    23:16   0:00 nginx: worker process
+nginx       6874  0.0  0.0  17980  4496 ?        S    23:16   0:00 nginx: worker process
+nginx       6876  0.0  0.0  17980  4496 ?        S    23:16   0:00 nginx: worker process
+nginx       6877  0.0  0.0  17980  4432 ?        S    23:16   0:00 nginx: worker process
+root        7116  0.0  0.0   6584  2628 tty1     S+   23:46   0:00 grep --color=auto nginx
+>>>>>>> e3707afd4e8e00e5d7e347b64aab55a2dca5b850
